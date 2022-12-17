@@ -1,0 +1,35 @@
+package framework.selenium;
+
+import org.openqa.selenium.WebDriver;
+
+public class TesteComandosNavegacao {
+	
+	static WebDriver driver;
+	
+	
+	public static void main(String[] args) {
+		
+	}
+	
+	
+	public static void comandosNavegacao() {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
+		
+		driver.get("https://www.globo.com");
+		
+		String titulo = driver.getTitle();
+		System.out.println(titulo);
+		
+		String url = driver.getCurrentUrl();
+		System.out.println(url);
+		
+		String fonte = driver.getPageSource();
+		System.out.println(fonte);
+		
+		
+	}
+	
+	
+
+}

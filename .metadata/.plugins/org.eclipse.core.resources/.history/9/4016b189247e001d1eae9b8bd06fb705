@@ -1,0 +1,25 @@
+package framework.selenium;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TesteComandosBrowser {
+
+	public static void main(String[] args) {
+
+	}
+
+	static WebDriver driver;
+	
+	public void comandosBrowser() {
+		
+		System.setProperty("webdriver.chrome.driver", "c:/autodrivers/chromedriver.exe"); // seta as propriedades do driver e o caminha
+		
+		driver = new ChromeDriver();
+		
+		
+		
+	}
+	
+	
+}
