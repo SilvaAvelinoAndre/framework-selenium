@@ -32,7 +32,7 @@ public class TesteComandosBrowser {
 		String fonte = driver.getPageSource();
 		System.out.println(fonte);
 		
-		driver.close();
+		//driver.close();
 		
 	}
 	
